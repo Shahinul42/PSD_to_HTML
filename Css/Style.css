@@ -1,0 +1,623 @@
+/* ========== REUSEABLE COMPONENT =============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: 0;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    letter-spacing: .1rem;
+    font-family: arial, sans-serif;
+}
+
+.Btn {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding: .8rem 1rem;
+    background: linear-gradient(90deg, #2960A7, #2E4373);
+    cursor: pointer;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    font-family: sans-serif;
+}
+
+.Btn:hover {
+    box-shadow: inset .1rem -.3rem 1rem #000;
+}
+
+a,
+p {
+    font-size: 1.4rem;
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: .01;
+}
+
+li {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+span {
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 3.5rem;
+    color: #2960A8;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: #2960A8;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.Container {
+    width: 114rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.Cols {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ============ NAV BAR ==================== */
+Nav {
+    background: #2960A8;
+    width: 100%;
+    height: 10rem;
+    color: #fff;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999999;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    margin:0 auto;
+    opacity: 1;
+}
+
+Nav .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+Nav .Container .Brand .Logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+Nav .Container .Brand .Logo .Logo_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1rem;
+    border-right: .1rem solid #fff;
+}
+
+Nav .Container .Brand .Logo .Logo_text span:first-child {
+    font-size: 7rem;
+}
+
+Nav .Container .Brand .Logo .Logo_text span:last-child {
+    margin-left: auto;
+}
+
+Nav .Container .Brand .Logo .Logo_image img {
+    width: 7.8rem;
+    height: 7.8rem;
+}
+
+Nav .Container .Brand .Logo .Logo_image {
+    padding: 1rem;
+}
+
+Nav .Container .Hambargar {
+    display: none;
+}
+
+Nav .Container .Main_nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: arial, sans-serif;
+}
+
+Nav .Container .Main_nav .Top_part {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+Nav .Container .Main_nav .Top_part .Mobile_number {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+Nav .Container .Main_nav .Top_part a.Btn {
+    text-transform: capitalize;
+    color: #2960A8;
+    background: #fff;
+    padding: .5rem .8rem;
+    border-radius: .6rem;
+    transition: all .2s ease-in-out;
+}
+
+Nav .Container .Main_nav .Top_part a.Btn:hover {
+    box-shadow: inset .1rem -.3rem 1rem #000;
+}
+
+Nav .Container .Main_nav .Bottom_part ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+Nav .Container .Main_nav .Bottom_part ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    /* border:.0001rem solid #fff; */
+    border-radius: .5rem;
+    margin-left: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+Nav .Container .Main_nav .Bottom_part ul li a:hover {
+    box-shadow: inset .1rem -.3rem 1rem #000;
+}
+
+/* =========== HOME ARYA ============= */
+.Home_arya {
+    background: #F7F7F7;
+    position: relative;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 12rem;
+}
+
+.Home_arya .Home {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.Home_arya .Container .H_col_left {
+    z-index: 2;
+    max-width: 30%;
+    padding-top: 1rem;
+}
+
+.Home_arya .Container .H_col_left h2 {
+    text-transform: capitalize;
+}
+
+.Home_arya .Container .H_col_left p {
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin: 2rem 0;
+}
+
+.Home_arya .Container .H_col_left p.Top {
+    margin-top: 3rem;
+}
+
+.Home_arya .Container .H_col_left a.Btn {
+    margin: 1rem 0;
+}
+
+.Home_arya .Container .H_col_middle img {
+    max-width: calc(100%/2);
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    margin-top: -8rem;
+}
+
+.Home_arya .Container .H_col_right {
+    max-width: calc(100%/3);
+    z-index: 2;
+}
+
+.Home_arya .Container .H_col_right form {
+    background: #2960A8;
+    padding: 3rem 2.5rem;
+    border-radius: .5rem;
+    user-select: none;
+    color: #fff;
+    margin: 1rem 0;
+    /* width: 80%; */
+}
+
+.Home_arya .Container .H_col_right form h3 {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.Home_arya .Container .H_col_right form>input,
+textarea {
+    display: inline-flex;
+    text-transform: capitalize;
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    background: #d8d7d7;
+    transition: all .2s ease-in-out;
+}
+
+.Home_arya .Container .H_col_right form>input:focus,
+textarea:focus {
+    background: #fff;
+}
+
+.Home_arya .Container .H_col_right form>textarea.Full_width,
+input.Full_width {
+    width: 100%;
+}
+
+.Home_arya .Container .H_col_right form input[type=radio] {
+    margin-right: .2rem;
+}
+
+.Home_arya .Container .H_col_right form>label {
+    margin-top: 1rem;
+    display: inline-flex;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.Home_arya .Container .H_col_right form span {
+    color: red;
+    margin-left: .1rem;
+}
+
+.Home_arya .Container .H_col_right form>p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.Home_arya .Container .H_col_right form input.Btn {
+    padding: 2rem 1rem;
+    justify-content: center;
+    background: linear-gradient(90deg, #23589c, #2E4373);
+}
+
+/* =========== PG DIPLOMA ARYA =============  */
+.Pg_diploma_arya .Container h2 {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.Pg_diploma_arya .Container .Cols .Col {
+    width: 50%;
+}
+
+.Pg_diploma_arya .Container .Pg_content .Pg_left img {
+    width: 100%;
+}
+
+.Pg_diploma_arya .Container .Pg_content .Pg_right {
+    padding: 1rem;
+}
+
+.Pg_diploma_arya .Container .Pg_content .Pg_right h4 {
+    color: #2960A8;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.Pg_diploma_arya .Container .Pg_content .Pg_right li {
+    margin-top: .8rem;
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+/* =========== HIGHLIGHT ARYA ============= */
+.Highlight_arya .Container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.Highlight_arya .Container p {
+    max-width: 60%;
+    padding: 1rem 0;
+}
+
+.Highlight_arya .Container .Section_top {
+    padding: 3rem 0;
+}
+
+.Highlight_arya .Container .Section_bottom .Cols .Col {
+    width: calc(100% / 3 - 4rem);
+    margin: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    cursor: auto;
+    user-select: none;
+}
+
+.Highlight_arya .Container .Section_bottom .Cols .Col:hover {
+    box-shadow: inset .1rem -.3rem 1rem rgba(0, 0, 0, 0);
+}
+
+.Highlight_arya .Container .Section_bottom .Cols .Col img {
+    padding-right: 1rem;
+}
+
+/* =========== LIVE ZOOM ARYA ============= */
+.Live_zoom_arya {
+    padding: 2rem 0;
+    width: 100%;
+    background: #2960A8;
+}
+
+.Live_zoom_arya .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Live_zoom_arya h4 {
+    max-width: 50%;
+    color: #fff;
+}
+
+.Live_zoom_arya .Btn {
+    background: #fff;
+    color: #2960A8;
+    padding: 2rem 2rem;
+}
+
+/* =========== Tool ARYA ============= */
+.Tool_arya {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.Tool_arya h3 {
+    padding: 2rem 0;
+    font-weight: 600;
+}
+
+.Tool_arya .Container .Cols .Col {
+    width: calc(100%/6 - 2rem);
+    margin: 2rem 1rem;
+    cursor: pointer;
+}
+
+/* =========== CERTIFICATE ARYA ============= */
+.Certificate_arya {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.Certificate_arya .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Certificate_arya .Section_left {
+    width: 48%;
+}
+
+.Certificate_arya .Section_left h2 {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Certificate_arya .Section_left h4 {
+    color: #2960A8;
+    font-weight: 600;
+}
+
+.Certificate_arya .Section_left .Row:nth-child(3) {
+    margin: 2rem 0;
+}
+
+.Certificate_arya .Section_right img {
+    height: 40rem;
+    width: auto;
+}
+
+/* =========== ENROLL ARYA ============= */
+.Enroll_arya {
+    padding: 2rem 0;
+    width: 100%;
+    background: #2960A8;
+}
+
+.Enroll_arya .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Enroll_arya h4 {
+    max-width: 50%;
+    color: #fff;
+}
+
+.Enroll_arya .Btn {
+    background: #fff;
+    color: #2960A8;
+    padding: 2rem 2rem;
+}
+
+/* =========== PREMIUM ARYA ============= */
+.Premium_arya {
+    text-align: center;
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.Premium_arya .Col {
+    max-width: calc(100%/2 - 2rem);
+    margin: 1rem;
+}
+
+.Premium_arya .Col p {
+    padding: 2rem 0;
+}
+
+/* =========== STUDENT_SAY ARYA ============= */
+.Student_say_arya .Container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.Student_say_arya .Container h3 {
+    padding: 2rem 0;
+}
+
+.Student_say_arya .Container .Cols {
+    padding: 3rem 0;
+}
+
+.Student_say_arya .Container .Col {
+    height: 20rem;
+    margin: 0 auto;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .2rem solid #2960A8;
+    padding: 1rem;
+}
+
+.Student_say_arya .Container .Col .Carasol_icon {
+    text-align: left;
+    color: #2E4373;
+}
+
+.Student_say_arya .Container .Col span {
+    font-size: 12rem;
+    display: block;
+    margin-top: -2rem;
+    transform: rotatex(180deg);
+}
+
+/* =========== FOOTER ARYA ============= */
+.Footer_arya {
+    background: #2960A8;
+    width: 100%;
+    color: #fff;
+}
+
+.Footer_arya .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+
+.Footer_arya .Container .Section_left h3 {
+    color: #fff;
+}
+
+.Footer_arya .Container .Section_right {
+    display: flex;
+    align-items: center;
+}
+
+.Footer_arya .Container .Section_right .Email {
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.Footer_arya .Container .Section_right .Email span:nth-child(1) {
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .7rem;
+}
+
+.Footer_arya .Container .Section_right .Phone {
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.Footer_arya .Container .Section_right .Phone span:nth-child(1) {
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .7rem;
+}
